@@ -1,6 +1,8 @@
 # Pomodoro Timer
 
-Very simple pomodoro timer created using electron. 
+Very simple pomodoro timer created using electron.
+
+
 ![Menue View](image-1.png)
 ![Timer View](image.png)
 ![Completed View](image-2.png)
