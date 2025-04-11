@@ -1,0 +1,23 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "simple pomodoro timer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaimiSmall/Pomodoro.git"
+  },
+  "author": "TaimiSmall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaimiSmall/Pomodoro/issues"
+  },
+  "homepage": "https://github.com/TaimiSmall/Pomodoro#readme",
+  "devDependencies": {
+    "electron": "^35.1.5"
+  }
+}
