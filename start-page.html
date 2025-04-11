@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./variables.css" rel="stylesheet" />
+    <link href="./start-page.css" rel="stylesheet" />
+    <title>Pomodoro-Timer</title>
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="controls">
+        <button id="minimize-btn">_</button>
+        <button id="close-btn">x</button>
+      </div>
+    </div>
+    <div class="main-layout">
+      <div class="title">Pomodoro-Timer</div>
+      <div class="input-layout">
+        <div class="time-input-group">
+          <label class="time-input-title" for="work-time">Work Timer</label>
+          <input
+            id="work-time"
+            class="time-input"
+            type="number"
+            value="25"
+            min="1"
+            max="120"
+          />
+          min
+        </div>
+        <div class="time-input-group">
+          <label class="time-input-title" for="break-time">Break Timer</label>
+          <input
+            id="break-time"
+            class="time-input"
+            type="number"
+            value="5"
+            min="1"
+            max="60"
+          />
+          min
+        </div>
+        <div class="time-input-group">
+          <label class="time-input-title" for="work-sessions"
+            >Work Sessions</label
+          >
+          <input
+            id="work-sessions"
+            class="time-input"
+            type="number"
+            value="4"
+            min="1"
+            max="10"
+          />
+          sessions
+        </div>
+      </div>
+      <div id="start-button">
+        <span class="start-button-text">Start Timer</span>
+      </div>
+    </div>
+
+    <script src="./start-script.js"></script>
+  </body>
+</html>

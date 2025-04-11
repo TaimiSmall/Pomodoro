@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./variables.css" rel="stylesheet" />
+    <link href="./timer-page.css" rel="stylesheet" />
+    <title>Timer Running</title>
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="controls">
+        <button id="minimize-btn">_</button>
+        <button id="close-btn">x</button>
+      </div>
+    </div>
+
+    <div class="timer-layout">
+      <span id="timer-heading">Work Section</span>
+      <div class="timer-running" id="timer-container">
+        <button id="pause-play-btn" class="pause-play"></button>
+        <span id="timer-text">Loading...</span>
+      </div>
+      <div id="timer-progress"></div>
+    </div>
+
+    <script src="./timer-script.js"></script>
+  </body>
+</html>

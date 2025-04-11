@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "anonymous";
+  src: url("./fonts/AnonymousPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "anonymous";
+  src: url("./fonts/AnonymousPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "anonymous", Arial, serif;
+  background-color: var(--main-background);
+  color: var(--text-colour);
+  padding: 12px;
+}
+
+button {
+  font-family: "anonymous", Arial, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.title-bar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  color: var(--main-background);
+  app-region: drag;
+}
+
+.title-bar .controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  app-region: no-drag;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.time-input-group {
+  font-size: 16px;
+}
+
+.time-input-title {
+  font-weight: bold;
+  font-weight: 16px;
+}
+
+.time-input {
+  font-family: 'anonymous';
+  color: var(--text-colour);
+  background-color: var(--main-background);
+  width: 60px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#start-button {
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--primary);
+  border-radius: 6px;
+  padding: 9px 18px;
+}
+
+.start-button-text {
+  font-size: 20px;
+  font-weight: bold;
+}

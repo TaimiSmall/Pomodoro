@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "anonymous";
+  src: url("./fonts/AnonymousPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "anonymous";
+  src: url("./fonts/AnonymousPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+  font-family: "anonymous", Arial, sans-serif;
+  background-color: var(--main-background);
+  color: var(--text-colour);
+  padding: 12px;
+  app-region: drag;
+}
+
+.title-bar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  color: var(--main-background);
+  app-region: drag;
+}
+
+.title-bar .controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  app-region: no-drag;
+}
+
+#timer-container {
+  text-align: center;
+  margin-left: -24px;
+}
+
+#timer-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.timer-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+}
+
+#timer-text {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+/* Progress bar styles */
+#timer-progress {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.progress-item {
+  height: 15px;
+  border-radius: 4px;
+}
+
+.active-session {
+    border: 0.5px solid var(--text-colour);
+}
+
+.work-session-unsaturated {
+  background-color: var(--primary-variant);
+  flex: 2;
+}
+
+.break-session-unsaturated {
+  background-color: var(--secondary-variant);
+  flex: 1;
+}
+
+.work-session-saturated {
+  background-color: var(--primary);
+  flex: 2;
+}
+
+.break-session-saturated {
+  background-color: var(--secondary);
+  flex: 1;
+}
+
+/*play button */
+.pause-play {
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-background);
+  background-image: url("./assets/pause.png");
+  app-region: no-drag;
+}
