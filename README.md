@@ -1,9 +1,9 @@
 # Pomodoro Timer
 
 Very simple pomodoro timer created using electron. 
-![Menue View](image-1.png)
-![Timer View](image.png)
-![Completed View](image-2.png)
+![Menue View](read-me-images/image-1.png)
+![Timer View](read-me-images/image.png)
+![Completed View](read-me-images/image-2.png)
 
 ## Features
 - custom time range for work sections
